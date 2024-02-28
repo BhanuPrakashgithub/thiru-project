@@ -1,0 +1,117 @@
+.main_division {
+  background-image: linear-gradient(
+    to left,
+    #d6fff2,
+    #ccf8f2,
+    #b4e7f5,
+    #8ccbf9,
+    #55a5fe,
+    #54a4ff
+  );
+  border: 10px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.sub_division1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 50%;
+  margin: 10px;
+}
+.sub_division2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .main_division {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sub_division1 {
+    align-items: center;
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sub_division2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub_division2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.image {
+  width: 200px;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .image {
+    width: 200px;
+  }
+}
+.head {
+  color: black;
+  font-family: 'Roboto';
+}
+.para {
+  color: black;
+  font-family: 'Roboto';
+}
+.button {
+  color: white;
+  width: 150px;
+  background-color: #fb8000;
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .head {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .para {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .button {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .head {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .para {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button {
+    align-self: center;
+  }
+}
